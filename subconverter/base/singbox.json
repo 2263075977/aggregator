@@ -72,7 +72,8 @@
     { "tag": "韩国", "type": "urltest", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["🇰🇷|KR|kr|首尔|韩|Korea"] }] },
     { "tag": "狮城", "type": "urltest", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["🇸🇬|SG|sg|新加坡|新|Singapore"] }] },
     { "tag": "美国", "type": "urltest", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["🇺🇸|US|us|美国|美|United States"] }] },
-    { "tag": "直连", "type": "direct" }
+    { "tag": "直连", "type": "direct" },
+    { "tag": "dns-out", "type": "dns" }
   ],
   
   "route": 
