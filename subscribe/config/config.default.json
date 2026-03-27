@@ -20,6 +20,12 @@
         },
         "dingyue_center": {
           "push_to": ["free"]
+        },
+        "SubscriptionShare": {
+          "push_to": ["free"]
+        },
+        "sorenab2": {
+          "push_to": ["free"]
         }
       }
     }
