@@ -1,18 +1,32 @@
 {
-  "domains": [
-    {
-      "name": "demo",
-      "sub": [
-        "123"
-      ],
-      "enable": true,
-      "push_to": ["free"],
-      "liveness": true,
-      "ignorede": true
-    }
-  ],
+  "domains": [],
   "crawl": {
-    "enable": false
+    "enable": true,
+    "exclude": "",
+    "threshold": 5,
+    "singlelink": false,
+    "config": {
+      "liveness": true,
+      "ignorede": true,
+      "exclude": "到期|Expire|Traffic|剩余流量|时间|官网|产品|联系"
+    },
+    "telegram": {
+      "enable": true,
+      "pages": 3,
+      "exclude": "付费|广告|推广|机场推荐|官网|下载|apk|APK",
+      "users": {
+        "changfengchannel": {
+          "push_to": ["free"]
+        },
+        "wangcai_8": {
+          "push_to": ["free"]
+        },
+        "mfjdpd": {
+          "exclude": "apk|APK|广告|推广|官网|下载",
+          "push_to": ["free"]
+        }
+      }
+    }
   },
   "groups": {
     "free": {
@@ -27,9 +41,9 @@
     "engine": "gist",
     "items": {
       "free-clash": {
-        "username": "2263075977",
-        "gistid": "9d8fdf8ee2221f1e0b26822cf48edb85",
-        "filename": "baipiao.yaml"
+        "username": "your-github-username",
+        "gistid": "your-gist-id",
+        "filename": "free-clash.yaml"
       }
     }
   }
