@@ -1,19 +1,28 @@
 {
   "domains": [],
+  "delay": 5000,
   "crawl": {
     "enable": true,
     "exclude": "",
     "threshold": 5,
     "singlelink": false,
+    "persist": {
+      "subs": "crawledsubs",
+      "proxies": "crawledproxies"
+    },
     "config": {
-      "liveness": true,
+      "rename": "",
+      "include": "",
+      "exclude": "到期|Expire|Traffic|剩余流量|时间|官网|产品|联系|续费|登录|邀请|返利|佣金|网址|群组|频道|TG|Telegram|客服|工单|最新地址|最新网址|公告|使用前|更新订阅|套餐|服务已到期|请保持每周一次更新订阅",
       "ignorede": true,
-      "exclude": "到期|Expire|Traffic|剩余流量|时间|官网|产品|联系|续费|登录|邀请|返利|佣金|网址|群组|频道|TG|Telegram|客服|工单|最新地址|最新网址|公告|使用前|更新订阅|套餐|服务已到期|请保持每周一次更新订阅"
+      "liveness": true
     },
     "github": {
       "enable": true,
       "pages": 2,
-      "push_to": ["free"],
+      "push_to": [
+        "free"
+      ],
       "exclude": "",
       "spams": [
         "vpn",
@@ -24,28 +33,85 @@
         "panel"
       ]
     },
-    "google": {
+    "twitter": {
       "enable": true,
-      "exclude": "",
-      "limits": 30,
-      "notinurl": [
-        "github.com",
-        "youtube.com",
-        "t.me"
-      ],
-      "push_to": ["free"]
-    },
-    "yandex": {
-      "enable": true,
-      "exclude": "",
-      "within": 5,
-      "pages": 2,
-      "notinurl": [
-        "github.com",
-        "youtube.com",
-        "t.me"
-      ],
-      "push_to": ["free"]
+      "users": {
+        "wenodecc": {
+          "enable": true,
+          "num": 25,
+          "include": "免费节点|订阅链接|Clash|V2ray|Shadowrocket|Vless|Mihomo",
+          "exclude": "付费|购买|教程|独享|共享号|机场推荐|联系客服",
+          "config": {
+            "rename": "",
+            "exclude": "到期|Expire|Traffic|剩余流量|时间|官网|产品|联系|续费|登录|邀请|返利|佣金|网址|群组|频道|TG|Telegram|客服|工单|最新地址|最新网址|公告|使用前|更新订阅|套餐|服务已到期|请保持每周一次更新订阅",
+            "ignorede": true,
+            "liveness": true
+          },
+          "push_to": [
+            "free"
+          ]
+        },
+        "oneClashcc": {
+          "enable": true,
+          "num": 25,
+          "include": "免费节点|订阅链接|Clash|V2ray|Shadowrocket|Mihomo",
+          "exclude": "付费|购买|教程|独享|共享号|机场推荐|联系客服",
+          "config": {
+            "rename": "",
+            "exclude": "到期|Expire|Traffic|剩余流量|时间|官网|产品|联系|续费|登录|邀请|返利|佣金|网址|群组|频道|TG|Telegram|客服|工单|最新地址|最新网址|公告|使用前|更新订阅|套餐|服务已到期|请保持每周一次更新订阅",
+            "ignorede": true,
+            "liveness": true
+          },
+          "push_to": [
+            "free"
+          ]
+        },
+        "freevless": {
+          "enable": true,
+          "num": 20,
+          "include": "免费节点|Vless|V2ray|Clash|订阅",
+          "exclude": "付费|购买|教程|独享|共享号|机场推荐|联系客服",
+          "config": {
+            "rename": "",
+            "exclude": "到期|Expire|Traffic|剩余流量|时间|官网|产品|联系|续费|登录|邀请|返利|佣金|网址|群组|频道|TG|Telegram|客服|工单|最新地址|最新网址|公告|使用前|更新订阅|套餐|服务已到期|请保持每周一次更新订阅",
+            "ignorede": true,
+            "liveness": true
+          },
+          "push_to": [
+            "free"
+          ]
+        },
+        "clashgithub88": {
+          "enable": true,
+          "num": 20,
+          "include": "免费|ssr|v2ray|clash|节点",
+          "exclude": "付费|购买|教程|独享|共享号|机场推荐|联系客服",
+          "config": {
+            "rename": "",
+            "exclude": "到期|Expire|Traffic|剩余流量|时间|官网|产品|联系|续费|登录|邀请|返利|佣金|网址|群组|频道|TG|Telegram|客服|工单|最新地址|最新网址|公告|使用前|更新订阅|套餐|服务已到期|请保持每周一次更新订阅",
+            "ignorede": true,
+            "liveness": true
+          },
+          "push_to": [
+            "free"
+          ]
+        },
+        "RockHeavens": {
+          "enable": true,
+          "num": 15,
+          "include": "免费节点|Shadowrocket|SSR|V2ray|Clash",
+          "exclude": "顶级机场推荐|使用教程|独享小火箭|付费|购买|广告|推广",
+          "config": {
+            "rename": "",
+            "exclude": "到期|Expire|Traffic|剩余流量|时间|官网|产品|联系|续费|登录|邀请|返利|佣金|网址|群组|频道|TG|Telegram|客服|工单|最新地址|最新网址|公告|使用前|更新订阅|套餐|服务已到期|请保持每周一次更新订阅",
+            "ignorede": true,
+            "liveness": true
+          },
+          "push_to": [
+            "free"
+          ]
+        }
+      }
     }
   },
   "groups": {
@@ -64,6 +130,16 @@
         "username": "2263075977",
         "gistid": "9d8fdf8ee2221f1e0b26822cf48edb85",
         "filename": "baipiao.yaml"
+      },
+      "crawledsubs": {
+        "username": "2263075977",
+        "gistid": "9d8fdf8ee2221f1e0b26822cf48edb85",
+        "filename": "crawledsubs.json"
+      },
+      "crawledproxies": {
+        "username": "2263075977",
+        "gistid": "9d8fdf8ee2221f1e0b26822cf48edb85",
+        "filename": "crawledproxies.txt"
       }
     }
   }
