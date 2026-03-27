@@ -6,23 +6,19 @@
     "threshold": 5,
     "singlelink": false,
     "config": {
-      "liveness": true,
+      "liveness": false,
       "ignorede": true,
       "exclude": "到期|Expire|Traffic|剩余流量|时间|官网|产品|联系"
     },
     "telegram": {
       "enable": true,
-      "pages": 3,
+      "pages": 5,
       "exclude": "付费|广告|推广|机场推荐|官网|下载|apk|APK",
       "users": {
-        "changfengchannel": {
+        "freeVPNjd": {
           "push_to": ["free"]
         },
-        "wangcai_8": {
-          "push_to": ["free"]
-        },
-        "mfjdpd": {
-          "exclude": "apk|APK|广告|推广|官网|下载",
+        "dingyue_center": {
           "push_to": ["free"]
         }
       }
