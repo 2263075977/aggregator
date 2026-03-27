@@ -10,24 +10,12 @@
       "ignorede": true,
       "exclude": "到期|Expire|Traffic|剩余流量|时间|官网|产品|联系"
     },
-    "telegram": {
+    "github": {
       "enable": true,
-      "pages": 5,
-      "exclude": "付费|广告|推广|机场推荐|官网|下载|apk|APK",
-      "users": {
-        "jiedian_share": {
-          "push_to": ["free"]
-        },
-        "SubscriptionShare": {
-          "push_to": ["free"]
-        },
-        "sorenab2": {
-          "push_to": ["free"]
-        },
-        "dingyue_Center": {
-          "push_to": ["free"]
-        }
-      }
+      "pages": 3,
+      "push_to": ["free"],
+      "exclude": "",
+      "spams": []
     }
   },
   "groups": {
