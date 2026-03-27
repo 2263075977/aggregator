@@ -8,14 +8,44 @@
     "config": {
       "liveness": true,
       "ignorede": true,
-      "exclude": "到期|Expire|Traffic|剩余流量|时间|官网|产品|联系"
+      "exclude": "到期|Expire|Traffic|剩余流量|时间|官网|产品|联系|续费|登录|邀请|返利|佣金|网址|群组|频道|TG|Telegram|客服|工单|最新地址|最新网址|公告|使用前|更新订阅|套餐|服务已到期|请保持每周一次更新订阅"
     },
     "github": {
       "enable": true,
-      "pages": 3,
+      "pages": 2,
       "push_to": ["free"],
       "exclude": "",
-      "spams": []
+      "spams": [
+        "vpn",
+        "warp",
+        "fork",
+        "stair",
+        "theme",
+        "panel"
+      ]
+    },
+    "google": {
+      "enable": true,
+      "exclude": "",
+      "limits": 30,
+      "notinurl": [
+        "github.com",
+        "youtube.com",
+        "t.me"
+      ],
+      "push_to": ["free"]
+    },
+    "yandex": {
+      "enable": true,
+      "exclude": "",
+      "within": 5,
+      "pages": 2,
+      "notinurl": [
+        "github.com",
+        "youtube.com",
+        "t.me"
+      ],
+      "push_to": ["free"]
     }
   },
   "groups": {
