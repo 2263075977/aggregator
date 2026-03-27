@@ -6,7 +6,7 @@
     "threshold": 5,
     "singlelink": false,
     "config": {
-      "liveness": false,
+      "liveness": true,
       "ignorede": true,
       "exclude": "到期|Expire|Traffic|剩余流量|时间|官网|产品|联系"
     },
@@ -15,16 +15,16 @@
       "pages": 5,
       "exclude": "付费|广告|推广|机场推荐|官网|下载|apk|APK",
       "users": {
-        "freeVPNjd": {
-          "push_to": ["free"]
-        },
-        "dingyue_center": {
+        "jiedian_share": {
           "push_to": ["free"]
         },
         "SubscriptionShare": {
           "push_to": ["free"]
         },
         "sorenab2": {
+          "push_to": ["free"]
+        },
+        "dingyue_Center": {
           "push_to": ["free"]
         }
       }
