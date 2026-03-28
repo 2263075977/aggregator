@@ -1,33 +1,52 @@
-"crawl": {
-  "enable": true,
-  "exclude": "",
-  "threshold": 5,
-  "singlelink": false,
-  "persist": {
-    "subs": "crawledsubs"
-  },
-  "config": {
-    "rename": "",
-    "include": "",
-    "exclude": "到期|Expire|Traffic|剩余流量|时间|官网|产品|联系|续费|登录|邀请|返利|佣金|网址|群组|频道|TG|Telegram|客服|工单|最新地址|最新网址|公告|使用前|更新订阅|套餐|服务已到期|请保持每周一次更新订阅",
-    "ignorede": true,
-    "liveness": true
-  },
-  "github": {
+{
+  "domains": [],
+  "delay": 5000,
+  "crawl": {
     "enable": true,
-    "pages": 2,
-    "push_to": ["free"],
     "exclude": "",
-    "spams": ["vpn", "warp", "fork", "stair", "theme", "panel"]
-  }
-},
-"storage": {
-  "engine": "gist",
-  "items": {
-    "free-clash": {
-      "username": "2263075977",
-      "gistid": "9d8fdf8ee2221f1e0b26822cf48edb85",
-      "filename": "baipiao.yaml"
+    "threshold": 5,
+    "singlelink": false,
+    "config": {
+      "rename": "",
+      "include": "",
+      "exclude": "到期|Expire|Traffic|剩余流量|时间|官网|产品|联系|续费|登录|邀请|返利|佣金|网址|群组|频道|TG|Telegram|客服|工单|最新地址|最新网址|公告|使用前|更新订阅|套餐|服务已到期|请保持每周一次更新订阅",
+      "ignorede": true,
+      "liveness": true
+    },
+    "github": {
+      "enable": true,
+      "pages": 2,
+      "push_to": [
+        "free"
+      ],
+      "exclude": "",
+      "spams": [
+        "vpn",
+        "warp",
+        "fork",
+        "stair",
+        "theme",
+        "panel"
+      ]
+    }
+  },
+  "groups": {
+    "free": {
+      "emoji": true,
+      "list": true,
+      "targets": {
+        "clash": "free-clash"
+      }
+    }
+  },
+  "storage": {
+    "engine": "gist",
+    "items": {
+      "free-clash": {
+        "username": "2263075977",
+        "gistid": "9d8fdf8ee2221f1e0b26822cf48edb85",
+        "filename": "baipiao.yaml"
+      }
     }
   }
 }
