@@ -1,5 +1,24 @@
 {
-  "domains": [],
+  "domains": [
+    {
+      "name": "soonvpn",
+      "sub": [],
+      "domain": "https://soonvpn.net",
+      "enable": true,
+      "rename": "",
+      "include": "",
+      "exclude": "",
+      "push_to": [
+        "free"
+      ],
+      "ignorede": true,
+      "liveness": true,
+      "rate": 2.5,
+      "count": 1,
+      "coupon": "",
+      "secure": false
+    }
+  ],
   "delay": 5000,
   "crawl": {
     "enable": true,
